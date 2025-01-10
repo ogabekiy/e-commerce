@@ -40,14 +40,12 @@ export default function Explore() {
         </Link>
       </div>
 
-      {/* Product Grid */}
+      
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {products.slice(visibleIndex, visibleIndex + 8).map((product) => (
           <div key={product.id} className="relative p-4 rounded-lg">
-            {/* Product Image Section */}
             <div className="relative flex h-[250px] w-[270px] bg-[#F5F5F5] justify-center">
               <img src={product.thumbnail} alt={product.title} className="object-cover" />
-              {/* Icons */}
               <div className="absolute top-2 right-2 flex flex-col items-center space-y-2">
                 <button className="bg-white p-2 rounded-full shadow hover:bg-gray-100">
                   <FavoriteBorder className="text-black" />
@@ -58,7 +56,6 @@ export default function Explore() {
               </div>
             </div>
 
-            {/* Product Details */}
             <div className="mt-4">
               <h2 className="font-medium text-base">{product.title}</h2>
               <p className="text-gray-500">{product.description.slice(0, 50)}...</p>

@@ -4,7 +4,6 @@ export default function Experience() {
   return (
     <div className='container mx-auto mt-[140px]'>
       <div className='w-[1170px] h-[500px] bg-black flex items-center justify-between'>
-        {/* Left Section */}
         <div className='ml-8'>
           <h3 className='text-[#00FF66] text-lg mb-4'>Categories</h3>
           <p className='text-white text-[48px]  w-[443px] leading-[60px] mb-8'>
